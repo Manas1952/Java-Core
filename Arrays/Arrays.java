@@ -1,6 +1,7 @@
 package Arrays;
 
 public class Arrays {
+
     public static void main(String[] args) {
         // 1-D Array
         int array1[] = new int[5], i = 1;
@@ -28,5 +29,23 @@ public class Arrays {
                 System.out.print(element + " ");
             }
         }
+
+        int []array4 = array1;
+
+        System.out.println(array4 == array1);
+
+        for (int integer = 5; integer<10; integer++) {
+            array4[integer-5] = integer;
+
+            System.out.println(array4[integer-5]);
+            System.out.println(array1[integer-5]);
+        }
+
+        System.out.println(array4 == array1);
+
+        // cloning
+        int[] array6 = array1.clone();
+
+        System.out.println(array6 == array1);
     }
 }
