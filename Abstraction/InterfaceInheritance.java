@@ -2,7 +2,7 @@ package Abstraction;
 
 
 interface AbstractClass1 {
-
+    void method1();
 }
 interface Printable1 extends AbstractClass1{
 
@@ -27,6 +27,11 @@ interface Showable1 extends Printable1{
     void show();
 }
 class InterfaceInheritance implements Showable1{
+
+    // must be public
+    public void method1() {
+        System.out.println("method1 of parent interface");
+    }
 
     public void print(){
         System.out.println("Hello");

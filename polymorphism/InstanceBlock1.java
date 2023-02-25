@@ -1,4 +1,4 @@
-package Polymorphism;
+package polymorphism;
 
 class class1{
     class1(){

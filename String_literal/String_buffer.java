@@ -5,6 +5,16 @@ public class String_buffer {
         StringBuffer str1 = new StringBuffer();
         StringBuffer str2 = new StringBuffer("3cstring");
 
+        StringBuffer string3 = new StringBuffer("string1");
+
+        StringBuffer string4 = new StringBuffer("string1");
+
+        System.out.println(string3 == string4);
+
+        System.out.println(string3.equals(string4));
+
+        System.out.println(string3.compareTo(string4));
+
         str1.append(3);
 
         str1.append('c');

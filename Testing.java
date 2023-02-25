@@ -1,22 +1,16 @@
 public class Testing {
+    static{
+        System.out.println("Static");
+    }
+    {
+        System.out.println("Instance");
+    }
+    public void Testing(){
+        System.out.println("Constructor");
+    }
     public static void main(String[] args) {
-        System.out.println("testing");
+
+        Testing t = new Testing();
     }
 }
-class Testing1{
-    public static void main(String[] args) {
-        byte b =127;
-        char c = (char) 65538;
 
-        // error
-//        byte d = (int)234;
-        System.out.println(c);
-        System.out.println("testing1");
-
-        byte b1 = (byte)1234567;
-        System.out.println(b1);
-
-        int[] arr = {1, 2, 3};
-        System.out.println(arr);
-    }
-}

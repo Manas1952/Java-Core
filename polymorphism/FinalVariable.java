@@ -1,4 +1,4 @@
-package Polymorphism;
+package polymorphism;
 
 class class4 {
     final int limit = 30;

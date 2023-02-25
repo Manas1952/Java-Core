@@ -1,4 +1,4 @@
-package Polymorphism;
+package polymorphism;
 
 class Person{
     int id;

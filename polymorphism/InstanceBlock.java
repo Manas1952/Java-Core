@@ -1,5 +1,12 @@
-package Polymorphism;
+package polymorphism;
 class Parent{
+    static {
+        System.out.println("static block of parent");
+    }
+    {
+        System.out.println("instance block of parent");
+    }
+
     Parent(){
         System.out.println("parent class constructor invoked");
     }
@@ -18,11 +25,15 @@ public class InstanceBlock extends Parent{
         m1();
     }
 
+    static {
+        System.out.println("static block of child");
+    }
+
     {
-        System.out.println("instance initializer block ");
+        System.out.println("instance initializer block of child ");
     }
 
     public static void main(String args[]){
-        InstanceBlock object = new InstanceBlock();
+//        InstanceBlock object = new InstanceBlock();
     }
 }

@@ -12,6 +12,12 @@ public class String_literal {
 
         System.out.println(str2 == str3);
 
+        System.out.println(str2.equals(str3));
+
+        System.out.println(str3.equals(str2));
+
+        System.out.println(str3.equals(str4));
+
         // .intern() will add str3 to string constant pool
         System.out.println(str4 == str3);
 

@@ -1,4 +1,4 @@
-package Polymorphism;
+package polymorphism;
 
 class Animal{
     String color1="white";
