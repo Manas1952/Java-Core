@@ -1,5 +1,8 @@
 package Exception;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 class Parent4 {
     void method() throws RuntimeException{
         System.out.println("parent method");
@@ -9,7 +12,7 @@ class Parent4 {
 public class MethodOverriding4 extends Parent4 {
     // must handle exception when subclass exception is declared
     // if it doesn't declare exception, then also should handle object.method()
-    void method()   {
+    void method() throws RuntimeException {
         System.out.println("child method");
     }
 

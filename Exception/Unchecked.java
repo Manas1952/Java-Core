@@ -7,7 +7,7 @@ public class Unchecked {
 
             // it's a empty string, not null
             String string1 = new String("");
-            System.out.println("--->" + string1);
+            System.out.println("-->" + string1);
 
             System.out.println(string1.length());
 

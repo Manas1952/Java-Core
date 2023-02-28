@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Input_stream_reader  {
+public class Input_stream_reader {
     public static void main(String[] args) throws IOException {
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
 

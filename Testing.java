@@ -1,16 +1,30 @@
-public class Testing {
-    static{
-        System.out.println("Static");
-    }
-    {
-        System.out.println("Instance");
-    }
-    public void Testing(){
-        System.out.println("Constructor");
-    }
-    public static void main(String[] args) {
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
-        Testing t = new Testing();
+abstract class Test {
+    public final void m1() {
+        System.out.println("m1()");
+    }
+
+    public static void main(String[] args)  {
+        try {
+            FileReader fileReader = new FileReader("");
+        }
+        catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("handled...");
+        }
+    }
+}
+public class Testing {
+
+    public static void main(String[] args) throws Exception {
+        try {
+            int value = 1 / 0;
+        }
+        catch (ArithmeticException arithmeticException) {
+
+            System.out.println("handled");
+        }
     }
 }
 
