@@ -30,7 +30,5 @@ public class FinalVariable {
         System.out.println(object.limit);
 
         object.method();
-
-
     }
 }

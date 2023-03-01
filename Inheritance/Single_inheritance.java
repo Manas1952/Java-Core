@@ -13,6 +13,7 @@ class Animal {
         System.out.println("Animal constructor");
     }
     static void walk() {
+        Animal.avgLifeSpan = 20;
 
         System.out.println("animal walking");
     }
@@ -58,9 +59,16 @@ class Dog extends Animal {
 
 // IS-A relationship
 public class Single_inheritance {
+
+    static void method(String string){
+        string.concat("abc");
+    }
     public static void main(String[] args) {
         Dog dog = new Dog("Tom");
         dog.avgLifeSpan = 3;
+
+        System.out.println(" " + Animal.avgLifeSpan);
+
         Dog.walk();
         Animal animal1 = null;
         Dog.avgLifeSpan = 2;
@@ -79,5 +87,8 @@ public class Single_inheritance {
         System.out.println("Average life span of Animal: " + dog.avgLifeSpan);
 
         System.out.println("Life span of dog: " + dog.lifeSpan);
+
+
+
     }
 }

@@ -16,5 +16,7 @@ public class MethodOverriding3 extends Parent3 {
         Parent3 object = new MethodOverriding3();
 
         object.method();
+
+        System.out.println(object.getClass());
     }
 }

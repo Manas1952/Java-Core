@@ -24,7 +24,7 @@ class Parent extends Grand{
         System.out.println("Parent is walking " + action);
     }
 
-    // invalid
+//     invalid
 //    int walk () {
 //        return 1;
 //    }
@@ -41,7 +41,7 @@ class Child extends Parent{
     }
 
     static void parentMethod() {
-        System.out.println("static parent method overriden");
+        System.out.println("static parent method overridden");
     }
 }
 public class Multilevel_inheritance {
@@ -63,6 +63,7 @@ public class Multilevel_inheritance {
 
         object.parentMethod();
 
-
+        System.out.println(object.age);
+        
     }
 }

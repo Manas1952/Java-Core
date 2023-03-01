@@ -25,7 +25,7 @@ class Parent1 {
 class Child1 extends Parent1{
     Child1(){}
 
-    // can't be overrided
+    // can't be overridden
 //    void method1() {
 //        System.out.println("final child method1");
 //    }
@@ -42,9 +42,9 @@ class Child1 extends Parent1{
 public class Final {
     public static void main(String[] args) {
 
-//        Parent1 object1  = new Parent1();
+        Parent1 object1  = new Parent1();
 
-//        object1.method1();
+        object1.method1();
 
         Parent1 object2 = new Child1();
         object2.method();
